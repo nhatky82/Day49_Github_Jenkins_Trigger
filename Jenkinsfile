@@ -7,6 +7,9 @@ pipeline {
             sh 'chmod +x ky.sh'
             sh './ky.sh'
           }
+         steps {
+            sh 'chmod +x nhatky.sh'
+            sh './nhatky.sh'
         }
     }
 }
