@@ -6,11 +6,13 @@ pipeline {
           steps {
             sh 'chmod +x ky.sh'
             sh './ky.sh'
-          }
-         steps {
+          }  
+       }
+       stage('Auto Trigger nhatky.sh') {
+          steps { 
             sh 'chmod +x nhatky.sh'
             sh './nhatky.sh'
-        }
+          }
       }
-    }
+  }
 }
