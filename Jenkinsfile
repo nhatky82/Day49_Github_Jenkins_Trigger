@@ -11,5 +11,6 @@ pipeline {
             sh 'chmod +x nhatky.sh'
             sh './nhatky.sh'
         }
+      }
     }
 }
